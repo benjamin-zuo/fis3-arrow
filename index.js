@@ -32,7 +32,7 @@ var exports = module.exports = function(fis) {
     fis
 
     .match('*.{sass,scss}', {
-        parser: fis.plugin('sass'),
+        parser: fis.plugin('node-sass'),
         rExt: '.css'
     }, weight)
 
@@ -134,15 +134,25 @@ var exports = module.exports = function(fis) {
     fis.media('prod')
 
     .match('*.js', {
+        useHash: true,
         optimizer: fis.plugin('uglify-js')
     }, weight)
 
     .match('*.css', {
+        useHash: true,
         optimizer: fis.plugin('clean-css')
     }, weight)
 
     .match('*.png', {
+        useHash: true,
         optimizer: fis.plugin('png-compressor')
+    }, weight)
+
+    // 默认本地发布到与当前路径同级
+    .match('*', {
+        deploy: fis.plugin('local-deliver', {
+            to: '../output-arrow'
+        })
     }, weight);
 
 
