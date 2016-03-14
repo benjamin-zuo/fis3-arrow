@@ -1,46 +1,43 @@
 {
-  "name": "fis3-arrow",
-  "version": "0.0.3",
-  "description": "fis3 jello arrow",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/benjamin-zuo/fis3-arrow.git"
-  },
-  "keywords": [
-    "fis3",
-    "jello",
-    "arrow"
-  ],
-  "author": {
-    "name": "benjamin",
-    "email": "cuew1987@gmail.com"
-  },
-  "license": "BSD",
-  "bugs": {
-    "url": "https://github.com/benjamin-zuo/fis3-arrow/issues"
-  },
-  "homepage": "https://github.com/benjamin-zuo/fis3-arrow/",
+    "name": "fis3-arrow",
+    "version": "0.0.3",
+    "description": "fis3 jello arrow",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/benjamin-zuo/fis3-arrow.git"
+    },
+    "keywords": [
+        "fis3",
+        "jello",
+        "arrow"
+    ],
+    "author": {
+        "name": "benjamin",
+        "email": "cuew1987@gmail.com"
+    },
+    "license": "BSD",
+    "bugs": {
+        "url": "https://github.com/benjamin-zuo/fis3-arrow/issues"
+    },
+    "homepage": "https://github.com/benjamin-zuo/fis3-arrow/",
 
-  "dependencies": {
-    "fis-parser-node-sass": "0.1.9",
-    "fis-parser-utc": "0.0.2",
-    "fis3-preprocessor-extlang": "1.1.7",
-    "fis3-command-server": "~0.0.2",
-    "fis3-server-jello": "~0.0.6",
-    "fis3-hook-commonjs": "0.1.13"
-  },
-  "devDependencies": {
-    "mocha": "*",
-    "should": "*"
-  },
-  "maintainers": [
-    {
-      "name": "benjamin",
-      "email": "cuew1987@gmail.com"
-    }
-  ]
+    "dependencies": {
+        "fis-parser-utc": "0.0.2",
+        "fis3-preprocessor-extlang": "1.1.7",
+        "fis3-command-server": "~0.0.2",
+        "fis3-server-jello": "~0.0.6",
+        "fis3-hook-commonjs": "0.1.13"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    },
+    "maintainers": [{
+        "name": "benjamin",
+        "email": "cuew1987@gmail.com"
+    }]
 }
