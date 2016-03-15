@@ -1,6 +1,6 @@
 {
     "name": "fis3-arrow",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "fis3 jello arrow",
     "main": "index.js",
     "scripts": {
@@ -26,11 +26,12 @@
     "homepage": "https://github.com/benjamin-zuo/fis3-arrow/",
 
     "dependencies": {
-        "fis-parser-utc": "0.0.2",
         "fis3-preprocessor-extlang": "1.1.7",
         "fis3-command-server": "~0.0.2",
         "fis3-server-jello": "~0.0.6",
-        "fis3-hook-commonjs": "0.1.13"
+        "fis3-hook-commonjs": "0.1.13",
+        "fis-parser-utc": "0.0.2",
+        "fis-parser-node-sass": "~0.1.9"
     },
     "devDependencies": {
         "mocha": "*",
