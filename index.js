@@ -96,6 +96,10 @@ var exports = module.exports = function(fis) {
     .match('{fis.properties,server.conf}', {
         release: '/WEB-INF/$0'
     }, weight)
+    
+    .match('**/README.md', {
+        release: false
+    })
 
     .match('server.conf', {
         release: '/WEB-INF/server${namespace}.conf'
@@ -138,7 +142,7 @@ var exports = module.exports = function(fis) {
         optimizer: fis.plugin('uglify-js')
     }, weight)
 
-    .match('*.css', {
+    .match('*.{scss,css}', {
         useHash: true,
         optimizer: fis.plugin('clean-css')
     }, weight)
