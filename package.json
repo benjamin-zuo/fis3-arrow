@@ -1,6 +1,6 @@
 {
     "name": "fis3-arrow",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "fis3 jello arrow",
     "main": "index.js",
     "scripts": {
@@ -31,7 +31,7 @@
         "fis3-server-jello": "~0.0.6",
         "fis3-hook-commonjs": "0.1.13",
         "fis-parser-utc": "0.0.2",
-        "fis-parser-sass": "0.3.16"
+        "fis3-parser-node-sass": "~0.1.9"
     },
     "devDependencies": {
         "mocha": "*",

@@ -32,7 +32,7 @@ var exports = module.exports = function(fis) {
     fis
 
     .match('*.{sass,scss}', {
-        parser: fis.plugin('sass'),
+        parser: fis.plugin('node-sass'),
         rExt: '.css'
     }, weight)
 
