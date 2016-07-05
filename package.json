@@ -1,6 +1,6 @@
 {
     "name": "fis3-arrow",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "fis3 jello arrow",
     "main": "index.js",
     "scripts": {
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/benjamin-zuo/fis3-arrow.git"
+        "url": "git://github.com/zuojj/fis3-arrow.git"
     },
     "keywords": [
         "fis3",
@@ -21,9 +21,9 @@
     },
     "license": "BSD",
     "bugs": {
-        "url": "https://github.com/benjamin-zuo/fis3-arrow/issues"
+        "url": "https://github.com/zuojj/fis3-arrow/issues"
     },
-    "homepage": "https://github.com/benjamin-zuo/fis3-arrow/",
+    "homepage": "https://github.com/zuojj/fis3-arrow/",
 
     "dependencies": {
         "fis3-preprocessor-extlang": "1.1.7",
