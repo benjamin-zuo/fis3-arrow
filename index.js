@@ -2,7 +2,7 @@ var path = require('path');
 
 var fis = module.exports = require('fis3');
 
-fis.cli.name = "fis3-arrow";
+fis.cli.name = "fisa";
 
 fis.cli.info = fis.util.readJSON(__dirname + '/package.json');
 
