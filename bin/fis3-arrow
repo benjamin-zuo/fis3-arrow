@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var fis = require('../index.js');
+
+fis.cli.run(process.argv);

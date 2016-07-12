@@ -1,8 +1,12 @@
 {
     "name": "fis3-arrow",
-    "version": "0.0.9",
+    "version": "0.0.10",
     "description": "fis3 jello arrow",
     "main": "index.js",
+    "bin": {
+        "fis3-arrow": "bin/fis3-arrow",
+        "fisa": "bin/fis3-arrow"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -16,29 +20,28 @@
         "arrow"
     ],
     "author": {
-        "name": "benjamin",
-        "email": "cuew1987@gmail.com"
+        "name": "zuojj",
+        "email": "zuojj.com@gmail.com"
     },
     "license": "BSD",
     "bugs": {
         "url": "https://github.com/zuojj/fis3-arrow/issues"
     },
     "homepage": "https://github.com/zuojj/fis3-arrow/",
-
     "dependencies": {
-        "fis3-preprocessor-extlang": "1.1.7",
-        "fis3-command-server": "~0.0.2",
-        "fis3-server-jello": "~0.0.6",
-        "fis3-hook-commonjs": "0.1.13",
+        "fis3": "3.4.17",
         "fis-parser-utc": "0.0.2",
-        "fis3-parser-node-sass": "~0.1.9"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "should": "*"
+        "fis3-parser-node-sass": "~0.1.9",
+        "fis-parser-marked": "0.0.6",
+        "fis3-preprocessor-extlang": "1.1.7",
+        "fis3-packager-deps-pack": "~0.0.1",
+        "fis3-hook-commonjs": "~0.1.14",
+        "fis3-command-server": "~0.0.2",
+        "fisp-command-init": "~0.1.0",
+        "fis3-server-jello": "~0.0.6"
     },
     "maintainers": [{
-        "name": "benjamin",
-        "email": "cuew1987@gmail.com"
+        "name": "zuojj",
+        "email": "zuojj.com@gmail.com"
     }]
 }
