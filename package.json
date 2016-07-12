@@ -1,6 +1,6 @@
 {
     "name": "fis3-arrow",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "fis3 jello arrow",
     "main": "index.js",
     "bin": {
