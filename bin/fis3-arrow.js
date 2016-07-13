@@ -5,7 +5,7 @@ var argv = require('minimist')(process.argv.slice(2));
 var path = require('path');
 var cli = new Liftoff({
     name: 'fisa',
-    processTitle: 'fis',
+    processTitle: 'fisa',
     moduleName: 'fisa',
     configName: 'fis-conf',
     extensions: {
