@@ -13,12 +13,12 @@ var cli = new Liftoff({
     }
 });
 
-cli.launch({
+cli.launch({                                                     
     cwd: argv.r || argv.root,
     configPath: argv.f || argv.file
 }, function(env) {
     var fis = require(!env.modulePath ? '../index.js' : env.modulePath);
-    var loaction = env.modulePath ? path.dirname(env.modulePath) : path.join(__dirname, '../');
+    var location = env.modulePath ? path.dirname(env.modulePath) : path.join(__dirname, '../');
     process.title = this.name + ' ' + process.argv.slice(2).join(' ') + ' [ ' + env.cwd + ' ]';
     /**
      * 配置插件查找路径，优先查找本地项目里面的 node_modules，然后
