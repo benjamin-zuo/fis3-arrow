@@ -1,9 +1,10 @@
 {
     "name": "fis3-arrow",
-    "version": "0.0.22",
+    "version": "0.0.23",
     "description": "fis3 jello arrow",
     "main": "index.js",
     "bin": {
+        "fis3-arrow": "./bin/fis3-arrow.js",
         "fisa": "./bin/fis3-arrow.js"
     },
     "scripts": {
@@ -28,6 +29,7 @@
     },
     "homepage": "https://github.com/zuojj/fis3-arrow/",
     "dependencies": {
+        "fis3": "~3.4.17",
         "fis-parser-utc": "0.0.2",
         "fis3-parser-node-sass": "~0.1.9",
         "fis-parser-marked": "0.0.6",
