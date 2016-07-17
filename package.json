@@ -1,7 +1,7 @@
 {
     "name": "fis3-arrow",
     "version": "0.0.23",
-    "description": "fis3 jello arrow",
+    "description": "fisa fis3 jello arrow",
     "main": "index.js",
     "bin": {
         "fis3-arrow": "./bin/fis3-arrow.js",
