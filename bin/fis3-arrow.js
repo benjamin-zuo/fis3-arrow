@@ -19,7 +19,6 @@ cli.launch({
     configPath: argv.f || argv.file
 }, function(env) {
     var fis = require(!env.modulePath ? '../index.js' : env.modulePath);
-    var location = env.modulePath ? path.dirname(env.modulePath) : path.join(__dirname, '../');
     process.title = this.name + ' ' + process.argv.slice(2).join(' ') + ' [ ' + env.cwd + ' ]';
     /**
      * 配置插件查找路径，优先查找本地项目里面的 node_modules，然后
@@ -27,7 +26,6 @@ cli.launch({
      */
     fis.require.paths.unshift(path.join(env.cwd, 'node_modules'));
     fis.require.paths.push(path.join(path.dirname(__dirname), 'node_modules'));
-    fis.log.info('Currently running %s (%s)', cli.name, location);
     fis.cli.name = this.name;
     fis.cli.run(argv, env);
 });
