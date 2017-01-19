@@ -56,7 +56,7 @@ fis
 }, weight)
 
 // 标记 components 、 page 和 widget 目录下面的 js 都是模块。
-.match('/{components,page,widget}/**.js', {
+.match('/{components,view,page,widget}/**.js', {
     isMod: true
 }, weight)
 
@@ -79,7 +79,7 @@ fis
     isMod: true
 }, weight)
 
-.match('/page/**.{jsp,vm,html}', {
+.match('/{page,view}/**.{jsp,vm,html}', {
     isMod: true,
     url: '$0',
     release: '${templates}/${namespace}/$0',
@@ -165,7 +165,7 @@ fis.media('prod')
 fis.on('conf:loaded', function() {
     if (!fis.get('namespace')) return;
 
-    fis.match('/{page,widget}/**.{jsp,vm,html}', {
+    fis.match('/{page,view,widget}/**.{jsp,vm,html}', {
         url: '/${namespace}$0'
     }, weightWithNs);
     
